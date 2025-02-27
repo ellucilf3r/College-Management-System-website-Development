@@ -1,0 +1,157 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header
+{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url('image/backInfo.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}	
+
+nav
+{
+	display:flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img
+{
+	width: 150px;
+}
+
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.nav-links ul li:after
+{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background-color:#c7ddeb;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+
+.nav-links ul li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-family: fantasy ;
+}
+
+.nav-links ul li a:hover
+{
+	color:#d4d6db;
+}
+
+/* Login Section */
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.form-container {
+    background-color: #375e83;
+    padding: 60px 80px; /* Increased padding for a bigger form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px; /* Increased width for larger form */
+}
+
+h2 {
+	color: #e7e7e7;
+    font-family: 'Norwester', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+	font-family: 'Norwester', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #e7e7e7;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    width: 30%;
+    background-color: #50a3f0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin:0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+	color: #e7e7e7;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a {
+
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}

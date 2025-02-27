@@ -1,0 +1,146 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: -30px; /* Negative margin to pull the courses section up */
+}
+
+/* Header */
+.header 
+{
+    height:100px;
+    background-color: #8098ae;
+    padding-bottom: 10px; /* Adjusted padding for smaller header */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    padding: 2% 4%; /* Adjusted padding for smaller space */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img
+{
+    width: 150px;
+}
+
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li:after
+{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background-color:#c7ddeb;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: fantasy ;
+}
+
+.nav-links ul li a:hover
+{
+    color:#d4d6db;
+}
+
+/* Course section */
+.courses h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased min-width */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.course-card h2 {
+    color: #004080;
+}
+
+.course-card p {
+    color: #666;
+}
+
+.course-card img {
+    width: 100%; /* Makes the image fill the width of the box */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image is cropped to fit nicely */
+    border-top-left-radius: 10px; /* Optional: Makes corners rounded */
+    border-top-right-radius: 10px;
+}
+
+/* Footer */
+.footer-container 
+{
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}

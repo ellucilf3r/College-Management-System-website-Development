@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+      <div class="navbar">
+        <div class="leftFunction">
+          <a href="frmStudMain.html">
+            <img src="C:/Users/Adlin/Downloads/html gp/backbutton.png" alt="Back Button" width="45" height="45">
+          </a>
+            <a href="about.html">About Us</a>            
+        </div>
+        <div class="rightFunction">
+            <a href="frmLogout.php">Log Out</a>
+            <a href="homePage.html">
+            <img src="C:/Users/Adlin/Downloads/html gp/homeBtn.png" alt="Home Button" width="45" height="45">
+            </a>
+        </div>
+      </div>
+    </nav>
+    <form name="frmStudInfo" method="POST" action="studInfo.php">
+      <h1>STUDENT INFORMATION</h1>
+      <div class="form-stdInfo">
+      <table>
+        <tr>
+          <td>Student Name:</td>
+          <td><input type="text" name= "stdname"></td>
+          <td>Student Position:</td>
+          <td>
+            <select name="stdPosition" id="stdPosition">
+              <option value="" disabled selected>Commander</option>
+              <option value="commander">Commander</option>
+              <option value="src">Student Representative Council</option>
+              <option value="crc">College Representative Committee</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Student ID:</td>
+          <td><input name="sid" type="text" size="6"></td>
+          <td>Faculty:</td>
+          <td>
+              <select name="sPro" id="sPro">
+              <option value="" disabled selected>Faculty of Accountancy</option>
+              <option value="fAcc">Faculty of Accountancy</option>
+              <option value="fAs">Faculty of Applied Science</option>
+              <option value="fSkm">Faculty of Mathematics and Science</option>
+              <option value="fHm">Faculty of Hospitality Management</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="sEmail"></td>
+          <td>Programme:</td>
+          <td>
+            <select name="sPro" id="sPro">
+              <option value="" disabled selected>Diploma in Accounting</option>
+              <option value="pAcc">Diploma in Accounting</option>
+              <option value="pAs">Diploma in Applied Science</option>
+              <option value="pAm">Diploma in Applied Mathematics</option>
+              <option value="pHm">Diploma in Hotel Management</option>
+              <option value="pFa">Bachelor of Finance and Accounting</option>
+              <option value="pSm">Bachelor of Science Mathematics</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Phone Number:</td>
+          <td><input type= "number" name= "sPhone" maxlength="11"></td>
+          <td>Programme Code:</td>
+          <td>
+            <select name= "cPro" id="cPro">
+              <option value="" disabled selected>DAC101</option>
+              <option value="cAcc">DAC101</option>
+              <option value="cAs">AS250</option>
+              <option value="cAm">DAM102</option>
+              <option value="cHm">DHM103</option>
+              <option value="cFa">BFA202</option>
+              <option value="cSm">SM260</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Student Gender:</td>
+          <td>
+            <input type="radio" name= "custgen" value="F">Female   
+            <input type="radio" name="custgen" value="M">Male
+          </td>
+          <td>Semester:</td>
+          <td>
+            <select name= "sSem" id="sSem">
+              <option value="" disabled selected>1</option>
+              <option value="s1">1</option>
+              <option value="s2">2</option>
+              <option value="s3">3</option>
+              <option value="s4">4</option>
+              <option value="s5">5</option>
+              <option value="s6">6</option>
+              <option value="s7">7</option>
+            </select>
+          </td>
+        </tr>
+      </table> 
+      </div> 
+      <div class="form-buttons">
+        <button type="reset" class="clear">CLEAR</button>
+        <button type="submit" class="save">SAVE</button>
+        <button type="button" class="next">NEXT</button>
+      </div>
+    </form>
+   </section>
+</body>
+</html>

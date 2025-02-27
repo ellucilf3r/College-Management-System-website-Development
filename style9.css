@@ -1,0 +1,150 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header
+{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('image/backInfo.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header h1
+{
+  font-family:"Impact", Charcoal, sans-serif;
+  font-size:45px;
+  font-weight: normal;
+  text-align: center;
+  flex:1;
+  color:black;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px; /* Fixed height for the navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: transparent;
+    position: relative; /* Ensure it doesn’t overlap */
+    z-index: 10; /* Keep it above other elements */
+}
+
+.leftFunction {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Reduces space between icons and text */
+}
+
+.leftFunction img:first-child {
+    margin-right: 10px; /* Moves the home button slightly away from the leftmost edge */
+}
+
+.leftFunction a {
+    text-decoration: none; /* Removes underline from links */
+    color: black;
+    font-size: 20px;
+    font-family: fantasy ;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.leftFunction a:hover {
+    color: #d4d6db;
+}
+
+a img {
+    display: block; /* Ensures the image behaves like a button */
+}
+
+a img {
+    cursor: pointer; /* Makes the images behave like buttons */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+a img:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.rightFunction {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between links */
+}
+
+.rightFunction a {
+    text-decoration: none; /* Removes underline from links */
+    color: black;
+    font-size: 20px;
+    font-family: fantasy ;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.rightFunction a:hover {
+    color: #d4d6db;
+}
+
+.rightFunction img {
+    width: 45px;
+    height: 45px;
+}
+
+.form-container 
+{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+}
+
+.form-group input, .form-group select {
+    flex: 2;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0c7adf;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
